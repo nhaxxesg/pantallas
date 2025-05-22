@@ -1,0 +1,97 @@
+/* Estilos generales */
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-header .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar ul li a:hover {
+    background: #007bff;
+}
+
+/* Contenido principal */
+#content {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tarjetas de estadísticas */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Header */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info i {
+    font-size: 1.5em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #sidebar {
+        min-width: 80px;
+        max-width: 80px;
+    }
+
+    #sidebar .sidebar-header h3,
+    #sidebar ul li a span {
+        display: none;
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #sidebar ul li a i {
+        font-size: 1.5em;
+    }
+}
